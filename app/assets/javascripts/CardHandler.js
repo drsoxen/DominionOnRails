@@ -12,5 +12,5 @@ function ToggleDominion(idElement,boolToFlip)
 
 function ResetCards()
 {
-  console.log(Math.floor(Math.random() * 100) + 1);
+  return (Math.floor(Math.random() * 100) + 1);
 }

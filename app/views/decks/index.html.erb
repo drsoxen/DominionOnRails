@@ -1,15 +1,15 @@
   <h3>Dominion</h3>
 
-            <% card1 = "Cards/Bridge.jpg" %>
-            <% card2 = "Cards/Bridge.jpg" %>
-            <% card3 = "Cards/Bridge.jpg" %>
-            <% card4 = "Cards/Bridge.jpg" %>
-            <% card5 = "Cards/Bridge.jpg" %>
-            <% card6 = "Cards/Bridge.jpg" %>
-            <% card7 = "Cards/Bridge.jpg" %>
-            <% card8 = "Cards/Bridge.jpg" %>
-            <% card9 = "Cards/Bridge.jpg" %>
-            <% card10 = "Cards/Bridge.jpg" %>
+            <% card1 = "Cards/"+ rand(156).to_s + ".jpg" %>
+            <% card2 = "Cards/"+ rand(156).to_s + ".jpg" %>
+            <% card3 = "Cards/"+ rand(156).to_s + ".jpg" %>
+            <% card4 = "Cards/"+ rand(156).to_s + ".jpg" %>
+            <% card5 = "Cards/"+ rand(156).to_s + ".jpg" %>
+            <% card6 = "Cards/"+ rand(156).to_s + ".jpg" %>
+            <% card7 = "Cards/"+ rand(156).to_s + ".jpg" %>
+            <% card8 = "Cards/"+ rand(156).to_s + ".jpg" %>
+            <% card9 = "Cards/"+ rand(156).to_s + ".jpg" %>
+            <% card10 = "Cards/"+ rand(156).to_s + ".jpg" %>
 
       <div class="row">
         <div class="twelve columns">
@@ -50,4 +50,4 @@
         </div>
       </div>
 
-  <center><a href="javascript:ResetCards();" class="large alert button" id= "PromoCardsToggle">Go</a></center>
+  <center><a href="javascript:history.go(0);" class="large alert button" id= "PromoCardsToggle">Randomize</a></center>
