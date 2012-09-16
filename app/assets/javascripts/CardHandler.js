@@ -36,40 +36,14 @@ function getImagePath()
     return img;
 }
 
-var card1 = "";
-var card2 = "";
-var card3 = "";
-var card4 = "";
-var card5 = "";
-var card6 = "";
-var card7 = "";
-var card8 = "";
-var card9 = "";
-var card10 = "";
-
 function PlaceCards()
 {
-	card1 = getImageTag(1);
-	card2 = getImageTag(2);
-	card3 = getImageTag(3);
-	card4 = getImageTag(4);
-	card5 = getImageTag(5);
-	card6 = getImageTag(6);
-	card7 = getImageTag(7);
-	card8 = getImageTag(8);
-	card9 = getImageTag(9);
-	card10 = getImageTag(10);
-
-  document.write(card1);
-  document.write(card2);
-  document.write(card3);
-  document.write(card4);
-  document.write(card5);
-  document.write(card6);
-  document.write(card7);
-  document.write(card8);
-  document.write(card9);
-  document.write(card10);
+	for (var i = 0; i < 10; i++)
+	{
+		document.write(getImageTag(i));
+		if(i == 4)
+			document.write("<br />");
+	}
 }
 
 function ChangeSpecificCard(idElement)
@@ -79,16 +53,10 @@ function ChangeSpecificCard(idElement)
 
 function ChangeAllCard()
 {
-	document.getElementById("1").src=getImagePath();
-	document.getElementById("2").src=getImagePath();
-	document.getElementById("3").src=getImagePath();
-	document.getElementById("4").src=getImagePath();
-	document.getElementById("5").src=getImagePath();
-	document.getElementById("6").src=getImagePath();
-	document.getElementById("7").src=getImagePath();
-	document.getElementById("8").src=getImagePath();
-	document.getElementById("9").src=getImagePath();
-	document.getElementById("10").src=getImagePath();
+	for (var i = 0; i < 10; i++)
+	{
+		document.getElementById(i).src=getImagePath();
+	}
 }
 
 
