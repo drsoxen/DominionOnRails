@@ -1,0 +1,11 @@
+<h1><%= @deck.title%>  </h1>
+<p><%= @deck.content%> </p>
+
+
+
+<script type="text/javascript">
+  PlaceSavedCards("<%= @deck.cards %>");
+</script>
+
+<br />
+<small><%= @deck.created_at %><small>

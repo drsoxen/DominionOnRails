@@ -1,16 +1,5 @@
   <h3>Dominion</h3>
 
-            <% card1 = "Cards/"+ rand(156).to_s + ".jpg" %>
-            <% card2 = "Cards/"+ rand(156).to_s + ".jpg" %>
-            <% card3 = "Cards/"+ rand(156).to_s + ".jpg" %>
-            <% card4 = "Cards/"+ rand(156).to_s + ".jpg" %>
-            <% card5 = "Cards/"+ rand(156).to_s + ".jpg" %>
-            <% card6 = "Cards/"+ rand(156).to_s + ".jpg" %>
-            <% card7 = "Cards/"+ rand(156).to_s + ".jpg" %>
-            <% card8 = "Cards/"+ rand(156).to_s + ".jpg" %>
-            <% card9 = "Cards/"+ rand(156).to_s + ".jpg" %>
-            <% card10 = "Cards/"+ rand(156).to_s + ".jpg" %>
-
       <div class="row" style="float: left;">
         <div class="twelve columns">
           <p>
@@ -38,7 +27,8 @@
   PlaceCards();
 </script>
 
-  <center><a href="javascript:ChangeAllCard();" class="large alert button" id= "PromoCardsToggle">Randomize</a><p><%= link_to "Add a new Deck", new_deck_path%></p></center>
+  <center><a href="javascript:ChangeAllCard();" class="large alert button" id= "PromoCardsToggle">Randomize</a>
+    <p><%= link_to "Add a new Deck", new_deck_path%></p></center>
 
 
             </p>
@@ -54,8 +44,8 @@
 
 <h2><%= link_to deck.title, deck %></h2>
 <p><%= deck.content %></p>
+<p><%= deck.cards %></p>
 <p>
-  <%= link_to "Edit", edit_deck_path(deck)%> | 
   <%= link_to "Delete", deck, :confirm => "Are you Sure?", :method => :delete%>
 </p>
 <hr />
