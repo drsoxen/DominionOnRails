@@ -11,10 +11,16 @@
     <%= f.text_area :content%>
   </p>  
 
-    <p>
+  <p>
     <%= f.label :cards%><br />
     <%= f.text_field :cards%>
   </p>  
+
+  <script type="text/javascript">
+
+  var changer = document.getElementById('deck_cards');     
+  changer.value = getCookie("CCards");
+  </script>
 
   <p>
     <%= f.submit "Add a new deck"%>

@@ -15,7 +15,7 @@ class DecksController < ApplicationController
   end
   
   def create
-    @deck = Deck.new(params[:deck], :cards => "0")
+    @deck = Deck.new(params[:deck])
 
     if @deck.save
       redirect_to decks_path, :notice => "Your Deck was saved"
